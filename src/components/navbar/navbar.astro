@@ -6,20 +6,6 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "xarxes socials",
-    path: "#",
-    children: [
-      { title: "X", path: "https://x.com/sergiohisto"},
-      { title: "Instaram", path: "#" },
-      { title: "LinkedIn", path: "#" },
-      { title: "404 Page", path: "/404" },
-    ],
-  },
-  {
-    title: "Preu",
-    path: "/pricing",
-  },
-  {
     title: "Sobre Nosaltres",
     path: "/about",
   },
@@ -30,6 +16,20 @@ const menuitems = [
   {
     title: "contacte",
     path: "/contact",
+  },
+  {
+    title: "Preu",
+    path: "/pricing",
+  },
+  {
+    title: "xarxes socials",
+    path: "#",
+    children: [
+      { title: "X", path: "https://x.com/sergiohisto" },
+      { title: "Instaram", path: "#" },
+      { title: "LinkedIn", path: "#" },
+      { title: "404 Page", path: "/404" },
+    ],
   },
   {
     title: "El diari / La font",
@@ -45,7 +45,7 @@ const menuitems = [
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
           ><span class="font-bold text-slate-800">SantHilari</span><span
-            class="text-slate-500">Link</span
+            class="text-primary/100 font-bold">Link</span
           >
         </a>
         <div class="block lg:hidden">
@@ -65,17 +65,20 @@ const menuitems = [
                   />
                 )}
 
-{!item.children && (
+                {!item.children && (
                   <li>
                     <a
                       href={item.path}
                       class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
-                      target={item.path.startsWith('http') ? '_blank' : '_self'}
-                      rel={item.path.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    >
+                      target={item.path.startsWith("http") ? "_blank" : "_self"}
+                      rel={
+                        item.path.startsWith("http")
+                          ? "noopener noreferrer"
+                          : undefined
+                      }>
                       <span>{item.title}</span>
                       {item.badge && (
-                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold  text-white bg-indigo-600 rounded-full">
+                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold  text-black bg-primary rounded-full">
                           Pròximet
                         </span>
                       )}
@@ -87,15 +90,15 @@ const menuitems = [
           }
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" style="muted" block size="md">Log in</Link>
-          <Link href="#" size="md" block>Sign up</Link>
+          <Link href="#" style="muted" block size="md">Entrar</Link>
+          <Link href="#" size="md" block>Sortir</Link>
         </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <a href="#">Entrar</a>
+        <Link href="#" size="md">Sortir</Link>
       </div>
     </div>
   </header>
