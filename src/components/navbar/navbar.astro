@@ -6,35 +6,35 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
+    title: "xarxes socials",
     path: "#",
     children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
+      { title: "X", path: "https://x.com/sergiohisto"},
+      { title: "Instaram", path: "#" },
+      { title: "LinkedIn", path: "#" },
       { title: "404 Page", path: "/404" },
     ],
   },
   {
-    title: "Pricing",
+    title: "Preu",
     path: "/pricing",
   },
   {
-    title: "About",
+    title: "Sobre Nosaltres",
     path: "/about",
   },
   {
-    title: "Blog",
+    title: "Bloc",
     path: "/blog",
   },
   {
-    title: "Contact",
+    title: "contacte",
     path: "/contact",
   },
   {
-    title: "Pro Version",
+    title: "El diari / La font",
     badge: true,
-    path: "https://astroship-pro.web3templates.com/",
+    path: "#",
   },
 ];
 ---
@@ -65,15 +65,18 @@ const menuitems = [
                   />
                 )}
 
-                {!item.children && (
+{!item.children && (
                   <li>
                     <a
                       href={item.path}
-                      class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
-                      <span> {item.title}</span>
+                      class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
+                      target={item.path.startsWith('http') ? '_blank' : '_self'}
+                      rel={item.path.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    >
+                      <span>{item.title}</span>
                       {item.badge && (
-                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
-                          New
+                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold  text-white bg-indigo-600 rounded-full">
+                          Pròximet
                         </span>
                       )}
                     </a>
