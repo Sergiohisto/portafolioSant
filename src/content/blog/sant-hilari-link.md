@@ -4,7 +4,7 @@ title: "SantHilari/Link: Impulsant la teva Presència Digital des del Cor de San
 snippet: "Tienes un proyecto en mente? No dudes en contactar con SantHilari/Link y descubre cómo pueden ayudarte a conectar tu visión con el mundo online. En 'La Fuente' estamos seguros de que su trabajo dejará una huella digital positiva en la comarca y más allá."
 image: {
     src: "/Santhi.webp",
-    alt: "data structures & algorithms"
+    alt: "Logo de SantHilari/Link"
 }
 publishDate: "2025-05-08 16:39"
 category: "SantHilari/Link"

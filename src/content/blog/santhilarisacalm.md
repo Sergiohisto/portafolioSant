@@ -3,7 +3,7 @@ draft: false
 title: "Sant Hilari Sacalm: Un Tesoro Escondido en el Corazón de les Guilleries"
 snippet: "Sant Hilari Sacalm: Un Tesoro Escondido en el Corazón de les Guilleries"
 image: {
-    src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
+    src: "/imagsant.webp",
     alt: "full stack web development"
 }
 publishDate: "2022-11-08 11:39"
