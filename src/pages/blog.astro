@@ -19,10 +19,9 @@ publishedBlogEntries.sort(function (a, b) {
 <Layout title="Blog">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Our Blog</Fragment>
+      <Fragment slot="title">El nostre Blog</Fragment>
       <Fragment slot="desc">
-        We write about building startups and thoughts going on our mind.
-      </Fragment>
+        Escrivim sobre els nostres serveis i com n'és de bonic el nostre poble.      </Fragment>
     </Sectionhead>
     <main class="mt-16">
       <ul class="grid gap-16 max-w-4xl mx-auto">
@@ -34,15 +33,15 @@ publishedBlogEntries.sort(function (a, b) {
                   <Picture
                     src={blogPostEntry.data.image.src}
                     alt={blogPostEntry.data.image.alt}
-                    sizes="(max-width: 800px) 100vw, 800px"
+                    sizes="(max-width: 500px) 100vw, 500px"
                     width={800}
                     height={600}
                     loading={index <= 2 ? "eager" : "lazy"}
                     decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md object-cover object-center bg-white"
+                    class="w-full rounded-md object-cover object-center bg-white shadow-xl"
                   />
                   <div>
-                    <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+                    <span class="text-secondary uppercase tracking-wider text-sm font-medium">
                       {blogPostEntry.data.category}
                     </span>
 
