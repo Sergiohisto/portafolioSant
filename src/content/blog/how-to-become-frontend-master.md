@@ -3,7 +3,7 @@ draft: false
 title: "Sant Hilari Sacalm: Un Tresor Amagat al Cor de les Guilleries"
 snippet: "Sant Hilari Sacalm: Un Tresor Amagat al Cor de les Guilleries"
 image: {
-    src: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?&fit=crop&w=430&h=240",
+    src: "/callesant.webp",
     alt: "frontend master"
 }
 publishDate: "2025-05-08 15:39"
